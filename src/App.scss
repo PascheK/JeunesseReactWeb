@@ -6,7 +6,9 @@
 .app__whitebg {
   background-color: var(--white-color);
 }
-
+.app__blackbg {
+  background-color: var(--black-color);
+}
 .app__primarybg {
   background-color: var(--primary-color);
 }
@@ -93,28 +95,24 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--white-color);
     margin: 0.25rem 0;
-    border: 1px solid var(--lightGray-color);
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    transition: all 0.3s ease-in-out;
-
+    transition: all .3s ease;
+    
     svg {
-      width: 15px;
-      height: 15px;
-      color: var(--gray-color);
+      width: 30px;
+      height: 30px;
+      color: var(--white-color);
     }
 
     &:hover {
-      background-color: var(--secondary-color);
-      border-color: var(--secondary-color);
 
       svg {
-        color: var(--white-color);
+        color: var(--red-color);
       }
     }
 
@@ -125,8 +123,8 @@
       margin: 0.5rem 0;
 
       svg {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
       }
     }
   }
@@ -135,6 +133,9 @@
 
 @media screen and (max-width: 500px) {
   .app__social {
-    display: none;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
